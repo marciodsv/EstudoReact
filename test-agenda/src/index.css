@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  --color-prog-cultura: #e3f2fd;
+  --color-prog-cultura-texto: #0d47a1;
+  --color-prog-assistencia: #f3e5f5;
+  --color-prog-assistencia-texto: #4a148c;
+  --color-prog-educacao: #e8f5e9;
+  --color-prog-educacao-texto: #1b5e20;
+}

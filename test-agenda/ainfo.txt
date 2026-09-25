@@ -1,0 +1,34 @@
+Opção 1: Executar chamando o pacote completo (Mais rápido)
+Rode o comando especificando a CLI do Capacitor:
+
+PowerShell
+npx @capacitor/cli init "TESTE Agenda" "br.com.teste.agenda" --web-dir "dist"
+Opção 2: Garantir a instalação local e executar em seguida
+Se a Opção 1 pedir confirmações extras, instale o pacote de desenvolvimento primeiro:
+
+PowerShell
+npm install -D @capacitor/cli
+npx cap init "TESTE Agenda" "br.com.teste.agenda" --web-dir "dist"
+Assim que o comando finalizar, o arquivo de configuração capacitor.config.ts (ou .json) será criado na raiz do projeto.
+
+Depois disso, você já pode dar sequência adicionando a plataforma do Android:
+
+PowerShell
+npm install @capacitor/android
+npx cap add android
+
+
+Cannot find module '@ionic/react' or its corresponding type declarations.
+
+Esse erro de TypeScript ocorre quando o pacote do Ionic React não está presente na pasta node_modules ou quando o TypeScript do editor ainda não atualizou o índice de tipos.
+
+Siga os passos para resolver:
+
+1
+1. Instalar o pacote @ionic/react
+Instala o Ionic React e as definições de tipos necessárias
+No terminal da pasta do seu projeto (C:\ESTUDO\EstudoReact\test-agenda), rode:
+
+PowerShell
+npm install @ionic/react @ionic/react-router ionicons
+
